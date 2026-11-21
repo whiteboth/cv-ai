@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV AI</title>
+<title>Trading Risk Calculator</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>CV AI</h1>
+<h1>Trading Risk Calculator</h1>
 
-<p>Optimiza tu CV con inteligencia artificial</p>
+<h3>Capital (€)</h3>
+<input type="number" id="capital" value="10000">
 
-<h3>Tu CV</h3>
-<textarea placeholder="Pega aquí tu CV"></textarea>
-
-<h3>Oferta de trabajo</h3>
-<textarea placeholder="Pega aquí la oferta de empleo"></textarea>
+<h3>Riesgo (%)</h3>
+<input type="number" id="riesgo" value="1">
 
 <br><br>
 
-<button onclick="analizar()">Analizar</button>
+<button onclick="calcular()">Calcular</button>
+
+<h2 id="resultado"></h2>
 
 <script src="script.js"></script>
 
